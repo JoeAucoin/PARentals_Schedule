@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PARentals_Schedule", "PARentals_Schedule.csproj", "{EB8860DC-3A31-4487-960E-7A09EFEF683A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB8860DC-3A31-4487-960E-7A09EFEF683A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB8860DC-3A31-4487-960E-7A09EFEF683A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB8860DC-3A31-4487-960E-7A09EFEF683A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB8860DC-3A31-4487-960E-7A09EFEF683A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {449FE124-EA64-4B8E-A520-C827B3178358}
+	EndGlobalSection
+EndGlobal

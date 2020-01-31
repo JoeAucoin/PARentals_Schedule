@@ -1,0 +1,53 @@
+﻿
+
+/****** Object:  StoredProcedure [dbo].[GIBS_Rentals_Schedule_GetAvailability]    Script Date: 12/04/2014 05:16:13 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[GIBS_Rentals_Schedule_GetAvailability]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[GIBS_Rentals_Schedule_GetAvailability]
+GO
+
+
+
+/****** Object:  StoredProcedure [dbo].[GIBS_Rentals_Schedule_GetAvailability]    Script Date: 12/04/2014 05:16:13 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+
+/*** EventsSignupsGetEvent ***/
+
+CREATE PROCEDURE [dbo].[GIBS_Rentals_Schedule_GetAvailability]
+(   
+    @PropertyID int
+)
+AS
+BEGIN
+SET NOCOUNT ON;
+
+SELECT [BookingID]
+      ,[ModuleID]
+      ,[PropertyID]
+      ,[DateStart]
+      ,[DateEnd]
+      ,[RentAmount] AS RentalAmount
+      ,[Status]
+      ,[ReservationID]
+      ,[CreatedByUserID]
+      ,[CreatedDate]
+      ,[UpdatedByUserID]
+      ,[UpdatedDate]
+  FROM [dbo].[GIBS_Rentals_Bookings] 
+  where PropertyID = @PropertyID AND
+  [Status] = 'A' AND
+  DateStart >= GetDate() 
+  ORDER BY DateStart
+
+
+END
+
+
+GO
+
+
