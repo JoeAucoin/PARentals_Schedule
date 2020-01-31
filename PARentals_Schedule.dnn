@@ -1,7 +1,7 @@
 ﻿<dotnetnuke type="Package" version="5.0">
   <packages><package name="GIBS.PARentals_Schedule" type="Module" version="1.0.1">
   <friendlyName>GIBS PARentals Schedule</friendlyName>
-  <description>Rentals Module for Ventrian Property Agent. Displays property schedule when a property is viewed.</description>
+  <description>Rentals Module for Ventrian Property Agent. Displays available schedule when a property is viewed.</description>
   <iconFile />
   <owner>
     <name>Joseph Aucoin</name>
